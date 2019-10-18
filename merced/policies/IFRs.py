@@ -68,7 +68,7 @@ class Requirement_Merced_R_below_Crocker_Huffman_Dam(WaterLPParameter):
 
         if wyt == 1:  # Wet Year
             if mth == 10:
-                if dy < 15:
+                if dy <= 15:
                     ferc_lic_flow = 0.71  # 25 cfs
                 else:
                     ferc_lic_flow = 2.12  # 75 cfs
@@ -80,7 +80,7 @@ class Requirement_Merced_R_below_Crocker_Huffman_Dam(WaterLPParameter):
                 ferc_lic_flow = 0.71  # 25 cfs
         else:  # Dry Year
             if mth == 10:
-                if dy < 15:
+                if dy <= 15:
                     ferc_lic_flow = 0.43  # 15 cfs
                 else:
                     ferc_lic_flow = 1.7  # 60 cfs
